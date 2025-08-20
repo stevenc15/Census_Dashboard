@@ -1,0 +1,34 @@
+data: 
+  unprocessed_path_2023: "data/unprocessed_2023.csv"
+  unprocessed_path_2018: "data/unprocessed_2018.csv"
+  unprocessed_path_2013: "data/unprocessed_2013.csv"
+  processed_save_path_2023: "data/processed_2023.csv"
+  processed_save_path_2018: "data/processed_2018.csv"
+  processed_save_path_2013: "data/processed_2013.csv"
+  api_key: "82c05d5ce225ec3ac96cbf6cf4e47e92aedecd1c"
+  year: "2013"
+  
+variables:
+  - B01001_001E
+  - B01001_002E
+  - B01001_026E
+  - B01002_001E
+  - B15003_001E
+  - B15003_022E
+  - B15003_023E
+  - B15003_024E
+  - B15003_025E
+  - B19013_001E
+  - B19301_001E
+  - B17001_002E
+  - B23025_003E
+  - B23025_005E
+  - B25077_001E
+  - B25002_002E
+  - B25014_001E
+  - B25003_002E
+  - B25003_003E
+  - B18101_001E
+  - B18101_002E
+  - B18101_003E
+  - B18101_004E
