@@ -67,8 +67,8 @@ census-dashboard/
 
 1. **Clone repo**  
    ```bash
-   git clone https://github.com/yourusername/census-dashboard.git
-   cd census-dashboard
+   git clone https://github.com/stevenc15/Census_Dashboard.git
+   cd Census_Dashboard
    
     ```
 2. **Install Dependencies**
@@ -81,14 +81,9 @@ census-dashboard/
   Save it as an environment variable:
   export CENSUS_API_KEY=your_key_here
   ```
-4. **Run ETL pipeline to generate cleaned CSVs**
+4. **Run ETL pipeline to generate cleaned CSVs and Run Streamlit App**
   ```bash
-    python etl/etl_pipeline.py
-  ```
-
-5. **Run Streamlit app**
-  ```bash
-  streamlit run app/dashboard.py
+    ./pipeline.py
   ```
 
 ## Example Visualizations
