@@ -63,37 +63,33 @@ census-dashboard/
 
 ---
 
-## ⚙Setup & Installation  
+## Setup & Installation  
 
 1. **Clone repo**  
    ```bash
    git clone https://github.com/yourusername/census-dashboard.git
    cd census-dashboard
    
-pip install -r requirements.txt
+    ```
+2. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+    ```
+3. **(Optional) Get a Census API Key
+  ```bash
+  Request a free key here: Census API Key Signup
+  Save it as an environment variable:
+  export CENSUS_API_KEY=your_key_here
+  ```
+4. **Run ETL pipeline to generate cleaned CSVs**
+  ```bash
+    python etl/etl_pipeline.py
+  ```
 
-Install dependencies
-
-pip install -r requirements.txt
-
-
-(Optional) Get a Census API Key
-
-Request a free key here: Census API Key Signup
-
-Save it as an environment variable:
-
-export CENSUS_API_KEY=your_key_here
-
-
-Run ETL pipeline to generate cleaned CSVs
-
-python etl/etl_pipeline.py
-
-
-Run Streamlit app
-
-streamlit run app/dashboard.py
+5. **Run Streamlit app**
+  ```bash
+  streamlit run app/dashboard.py
+  ```
 
 ## Example Visualizations
 
