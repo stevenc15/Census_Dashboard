@@ -5,9 +5,9 @@ import matplotlib.pyplot as plt
 import altair as alt
 
 import plotly.express as px 
-from sklearn.preprocessing import MinMaxScaler
 
-scaler = MinMaxScaler()
+
+
 
 with open("config/config.yaml", "r") as f:
     config=yaml.safe_load(f)
