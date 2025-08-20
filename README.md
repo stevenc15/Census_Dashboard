@@ -45,19 +45,18 @@ This project demonstrates an **end-to-end ETL pipeline**: extracting raw census 
 ## Project Structure  
 ```bash
 census-dashboard/
-│── data/
-│ ├── raw/ # raw ACS datasets fetched from API
-│ ├── processed/ # cleaned CSVs for dashboard use
-│
-│── etl/
-│ ├── etl_pipeline.py # extract, transform, load script
-│
-│── app/
-│ ├── dashboard.py # Streamlit app entry point
-│
+|── .streamlit/
+│ ├── config.toml # theme for streamlit app
 │── config/
-│ ├── variables.py # list of ACS variables and mappings
-│
+│ ├── config.yaml # list of mapping destinations for datasets
+│── data/ # raw ACS datasets fetched from API & cleaned CSVs for dashboard use
+|── notebooks/
+│ ├── etl.ipynb # experimental notebook to test out pipeline construction
+|── scripts/
+│ ├── fetch_data.py # fetch raw ACS datasets from API
+│ ├── preprocess_data.py # transform data and save processed dataset
+│── app.py # Streamlit app entry point
+│── pipeline.sh # extract, transform, load app
 │── requirements.txt
 │── README.md
 ```
