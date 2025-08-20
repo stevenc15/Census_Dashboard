@@ -43,6 +43,7 @@ This project demonstrates an **end-to-end ETL pipeline**: extracting raw census 
 ---
 
 ## Project Structure  
+```bash
 census-dashboard/
 │── data/
 │ ├── raw/ # raw ACS datasets fetched from API
@@ -59,7 +60,7 @@ census-dashboard/
 │
 │── requirements.txt
 │── README.md
-
+```
 
 ---
 
