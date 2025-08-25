@@ -6,8 +6,8 @@ import altair as alt
 
 import plotly.express as px 
 
-
-
+import sqlite3
+conn = sqlite3.connect("acs_data.db")
 
 with open("config/config.yaml", "r") as f:
     config=yaml.safe_load(f)
@@ -20,8 +20,9 @@ year_range = st.selectbox(
 )
 year = year_range.split("-")[-1]
 
-csv_path = config['data'][f"processed_save_path_{year}"]
-df = pd.read_csv(csv_path)
+df = pd.read_sql(f"SELECT * FROM acs_{year}", conn)
+#csv_path = config['data'][f"processed_save_path_{year}"]
+#df = pd.read_csv(csv_path)
 
 # Basic Table
 st.subheader("### Preview of Dataset")
@@ -333,4 +334,5 @@ with st.expander("State vs Nation-wide average"):
     fig_radar.update_traces(fill="toself")
     st.plotly_chart(fig_radar)
 
-    
+
+conn.close()
